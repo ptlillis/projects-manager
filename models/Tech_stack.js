@@ -15,7 +15,7 @@ const Tech_stackSchema = new Schema({
   }
 });
 
-const Tech_stack = mongoose.model("Tech_stack", Tech_stackSchema);
+const Tech_stack = mongoose.model("Tech_stacks", Tech_stackSchema);
 
 
 module.exports = Tech_stack;

@@ -14,7 +14,7 @@ const ProjectSchema = new Schema({
         type: Date,
         required: true
     },
-    tech_stack: [
+    tech_stacks: [
         new Schema({
             name: {
                 type: String,
@@ -36,7 +36,7 @@ const ProjectSchema = new Schema({
     ]
 });
 
-const Project = mongoose.model("Project", ProjectSchema);
+const Project = mongoose.model("Projects", ProjectSchema);
 
 
 module.exports = Project;
