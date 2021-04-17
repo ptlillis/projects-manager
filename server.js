@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const developerRouter = require("./routes/api/developerRoutes");
 const tech_stacksRouter = require("./routes/api/tech_stackRoutes");
+const projectRouter = require("./routes/api/projectRoutes")
 
 
 const app = express();
@@ -24,6 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/project_manager
 
 app.use(developerRouter);
 app.use(tech_stacksRouter);
+app.use(projectRouter);
 
 
 
