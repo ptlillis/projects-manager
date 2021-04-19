@@ -16,7 +16,7 @@ const developerSeed = [
         role: "JavaScript"
     },
     {
-        name: "Ali",
+        name: "Ali-2",
         role: "Database"
     },
     {
@@ -46,7 +46,13 @@ db.Developer
 
     Description: "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions"
     
-      }
+      },
+      {
+        name: "MongoDB",
+    
+        Description: "MongoDB, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions"
+        
+        }
 ]
 
 
@@ -78,6 +84,21 @@ db.Tech_stack
                 "name": "Adam"
             }
         ]
+},
+{
+  name: "Project-1",
+  
+  tech_stack: [
+      {
+          "name": "MongoDB",
+          "count": 4
+      }
+  ],
+  developers: [
+      {
+          "name": "Adam"
+      }
+  ]
 }
 ]
 
