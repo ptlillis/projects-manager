@@ -61,14 +61,20 @@ db.Tech_stack.remove({})
 
 const projectSeed = [
   {
+    id:1,
     name: "Project-1",
-    tech_stack: [{ name: "JavaScript", count: 1 }],
+    details:"add and add",
+    due_date:[{day:12/10/2021}],
+    tech_stacks: [{ name: "JavaScript", count: 1 }],
     developers: [{ name: "Adam"}]
   },
   {
-    name: "Project-1",
-    tech_stack: [{ name: "MongoDB", count: 4}],
-    developers: [{name: "Adam"}],
+    id:2,
+    name: "Project-2",
+    details: 'Add and add and ',
+    due_date: [{ day: 12 / 10 / 2021 }],
+    tech_stacks: [{ name: "JavaScript", count: 1 }],
+    developers: [{ name: "Adam" }]
   },
 ];
 

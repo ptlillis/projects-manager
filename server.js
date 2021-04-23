@@ -6,7 +6,8 @@ const projectRouter = require("./routes/api/projectRoutes")
 
 
 const app = express();
-
+var cors = require('cors');
+app.use(cors());
 const PORT = process.env.PORT || 3020;
 
 app.use(express.urlencoded({ extended: true }));
