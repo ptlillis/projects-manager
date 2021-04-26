@@ -1,20 +1,42 @@
-import React from "react";
-import Main from "./components/Main";
-import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+import React, { useState, useEffect } from 'react';
+import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import { useDispatch } from 'react-redux';
 
+import Projects from './components/Projects/Projects';
+import Form from './components/Form/Form';
+import { getProjects } from './actions/projects';
+import useStyles from './styles';
+import promgm from './images/module4.png';
 
-import "./App.css";
+const App = () => {
+  const [currentId, setCurrentId] = useState(0);
+  const dispatch = useDispatch();
+  const classes = useStyles();
 
-function App() {
+  useEffect(() => {
+    dispatch(getProjects());
+  }, [currentId, dispatch]);
+
   return (
-    <div className="App">
-      <Wrapper>
-      <Header title='Project Manager'/>
-        <Main />
-      </Wrapper>
-    </div>
+    <Container maxWidth="lg">
+      <AppBar className={classes.appBar} position="static" color="inherit">
+        <Typography className={classes.heading} variant="h2" align="center">Projects Requirement Management System</Typography>
+        <img className={classes.image} src={promgm} alt="icon" height="60" />
+      </AppBar>
+      <Grow in>
+        <Container>
+          <Grid container justify="space-between" alignItems="stretch" spacing={3}>
+            <Grid item xs={12} sm={7}>
+              <Projects setCurrentId={setCurrentId} />
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Form currentId={currentId} setCurrentId={setCurrentId} />
+            </Grid>
+          </Grid>
+        </Container>
+      </Grow>
+    </Container>
   );
-}
+};
 
 export default App;
