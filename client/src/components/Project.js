@@ -12,8 +12,13 @@ function Project({project, onDelete,onToggle}) {
         onDelete(project.id)}/>
         </h3>
             <p>{project.name}</p>
-            <p>{}</p>
-       
+            <p>{project.developers[0].name}</p>
+            
+
+
+            {<p>{project.tech_stacks[0].name}</p>}
+            {<p>{project.tech_stacks[0].cou}</p>}
+
             
            
             

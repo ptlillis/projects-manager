@@ -23,8 +23,14 @@ function App() {
 // show projects
 function loadProjects() {
 API.getProjects()
-.then(res => 
-  setProjects(res.data)
+
+.then(res => {
+  setProjects(res.data);
+  console.log(res.data);
+}
+
+
+
 )
   .catch(err => console.log(err));
 
