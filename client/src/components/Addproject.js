@@ -2,9 +2,9 @@ import { useState } from 'react'
 // import TeachStack from './TechStack'
 const AddProject = ({ onAdd }) => {
     const [name, setText] = useState('')
-    const [details, setDetails] = useState('')
+
     const [due_date, setDue_date] = useState('')
-    const [reminder, setReminder] = useState(false)
+    // const [reminder, setReminder] = useState(false)
     const [tech_stacks, setTech_stacks] = useState('')
     const [developers, setDevelopers] = useState('')
 
@@ -17,14 +17,14 @@ const AddProject = ({ onAdd }) => {
             return
         }
 
-        onAdd({ name, due_date, details, reminder, tech_stacks, developers})
+        onAdd({ name, due_date,  tech_stacks, developers})
 
         setText('')
         setDue_date('')
-        setDetails('')
+   
         setTech_stacks('')
         setDevelopers ('')
-        setReminder(false)
+        // setReminder(false)
    
     }
 
@@ -39,15 +39,7 @@ const AddProject = ({ onAdd }) => {
                     onChange={(e) => setText(e.target.value)}
                 />
             </div>
-            <div className='form-control'>
-                <label>Project Description</label>
-                <input
-                    type='text'
-                    placeholder='Type Description'
-                    value={details}
-                    onChange={(e) => setDetails(e.target.value)}
-                />
-            </div>
+         
             <div className='form-control'>
                 <label>Tech Stack</label>
                 <input 
@@ -75,7 +67,7 @@ const AddProject = ({ onAdd }) => {
                     onChange={(e) => setDue_date(e.target.value)}
                 />
             </div>
-            <div className='form-control form-control-check'>
+            {/* <div className='form-control form-control-check'>
                 <label>Set Reminder</label>
                 <input
                     type='checkbox'
@@ -83,7 +75,7 @@ const AddProject = ({ onAdd }) => {
                     value={reminder}
                     onChange={(e) => setReminder(e.currentTarget.checked)}
                 />
-            </div>
+            </div> */}
             <input type='submit' value='Add Project' className='btn btn-block' />
         </form>
     )

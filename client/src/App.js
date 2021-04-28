@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
-import axios from 'axios'
+
 import React from "react";
 import Main from "./components/Main";
 import Wrapper from "./components/Wrapper";
@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import "./App.css";
 import AddProject from "./components/Addproject";
 import Projects from "./components/Projects";
+import API from './utils/API';
 
 
 function App() {
@@ -17,23 +18,22 @@ function App() {
   const [projects, setProjects] = useState([])
  
   useEffect(() => {
-    console.log('');
-    // make api call to get projects
-    axios.get(`http://localhost:3020/api/projects`)
-      .then(function (response) {
-        console.log(response.data);
-        // I need this data here ^^
-  setProjects([response.data])
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+  loadProjects()
   },[]);
+// show projects
+function loadProjects() {
+API.getProjects()
+.then(res => 
+  setProjects(res.data)
+)
+  .catch(err => console.log(err));
 
-  // add project 
+
+}
+// add project 
   const Addproject = (project) =>{
-  const id = Math.floor(Math.random() * 1000) +1
-  const newproject = {id, ...project}
+
+  const newproject = {...project}
   setProjects([...projects,newproject])
 }
 //delete project 
