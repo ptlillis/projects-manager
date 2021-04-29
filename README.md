@@ -37,13 +37,6 @@ This application uses MERN framework, and is part of an ongoing build.
 ## Dataflow and Wireframes
 
 
-![Screen Shot 2021-03-04 at 5 31 23 PM](https://user-images.githubusercontent.com/59859358/110039827-cea78a80-7d0f-11eb-9904-2be1caa3d9d9.png)
-
-![Screen Shot 2021-03-04 at 5 35 08 PM](https://user-images.githubusercontent.com/59859358/110040413-c3a12a00-7d10-11eb-8ed0-b1ba0f48868b.png)
-
-![Screen Shot 2021-03-04 at 5 35 46 PM](https://user-images.githubusercontent.com/59859358/110040416-c56aed80-7d10-11eb-9cda-2cb7bb7a3e6f.png)
-
-![Screen Shot 2021-03-04 at 5 36 42 PM](https://user-images.githubusercontent.com/59859358/110040420-c734b100-7d10-11eb-805e-c4cc4c5d2d77.png)
 
 ## CHALLENGES
 
