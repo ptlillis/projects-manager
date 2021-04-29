@@ -36,7 +36,11 @@ This application uses MERN framework, and is part of an ongoing build.
 
 ## Dataflow and Wireframes
 
-
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
 
 ## CHALLENGES
 
