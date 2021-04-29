@@ -20,6 +20,42 @@ const developerSeed = [
     name: "Peter",
     role: "Front-end",
   },
+  {
+    name: "Yaze",
+    role: "Front-end",
+  },
+  {
+    name: "John",
+    role: "MongoDB",
+  },
+  {
+    name: "Zaid",
+    role: "full-stack",
+  },
+  {
+    name: "Kevin",
+    role: "j-query",
+  },
+  {
+    name: "Hanna",
+    role: "ajax",
+  },
+  {
+    name: "Sam",
+    role: "react",
+  },
+  {
+    name: "Lola",
+    role: "CSS",
+  },
+  {
+    name: "Jessica",
+    role: "Html",
+  },
+  {
+    name: "Noel",
+    role: "mySQL",
+  },
 ];
 
 db.Developer.remove({})
@@ -63,12 +99,12 @@ const projectSeed = [
   {
     name: "Project-1",
     tech_stack: [{ name: "JavaScript", count: 1 }],
-    developers: [{ name: "Adam"}]
+    developers: [{ name: "Adam" }]
   },
   {
-    name: "Project-1",
-    tech_stack: [{ name: "MongoDB", count: 4}],
-    developers: [{name: "Adam"}],
+    name: "Project-2",
+    tech_stack: [{ name: "MongoDB",}],
+    developers: [{ name: "Daniel" }],
   },
 ];
 

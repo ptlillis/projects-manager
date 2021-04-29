@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 // import "../styles/Header.css";
+import Button from './Button'
 
-export default class Header extends Component {
-  render() {
+
+const Header = ({onAdd,showAdd}) => {
+   
     return (
       <div className="header">
         <h1>Projects Directory</h1>
-        <p>Click on carrots to filter by heading or use the search box to narrow your results.</p>
+        <Button className='btn' color={showAdd ? 'red' : 'green'} text={showAdd ? 'Close' : 'Add a Project'} onClick={onAdd} />
+        
       </div>
     )
   }
-}
+export default Header
