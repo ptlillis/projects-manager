@@ -56,8 +56,8 @@ We will implement a login page, further collection reporting fucntionality and i
 
 ## Contributing
 
- Ali Alaloui - Data Lead, Workflow Designer, Mongoose, Middleware, React, Cloud DB
- Daniel Mestawat - Collection Schemas, Express, Node, Postman, React, Cloud DB
- Peter Lillis - Team Lead, Workflow Designer, Repo Management, React
- Yassin Elhilo - Mongo DB, Express, React
- Zaid Alharahsheh - Front End Lead, React, Javascript, Express, HTML, CSS
+ -Ali Alaloui - Data Lead, Workflow Designer, Mongoose, Middleware, React, Cloud DB
+ -Daniel Mestawat - Collection Schemas, Express, Node, Postman, React, Cloud DB
+ -Peter Lillis - Team Lead, Workflow Designer, Repo Management, React
+ -Yassin Elhilo - Mongo DB, Express, React
+ -Zaid Alharahsheh - Front End Lead, React, Javascript, Express, HTML, CSS
