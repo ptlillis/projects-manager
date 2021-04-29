@@ -40,6 +40,9 @@ This application uses MERN framework, and is part of an ongoing build.
 ![UI wireframe #2](https://github.com/ptlillis/projects-manager/blob/main/assets/image%20(4).png)
 ![System Diagram](https://github.com/ptlillis/projects-manager/blob/main/assets/sys-diagram.png)
 ![Technology Map](https://github.com/ptlillis/projects-manager/blob/main/assets/system-2.png)
+![Collection Schema #1](https://github.com/ptlillis/projects-manager/blob/main/assets/Screen%20Shot%202021-04-29%20at%208.37.45%20AM.png)
+![Collection Schema #2](https://github.com/ptlillis/projects-manager/blob/main/assets/Screen%20Shot%202021-04-29%20at%208.43.38%20AM.png)
+![Collection Schema #3](https://github.com/ptlillis/projects-manager/blob/main/assets/Screen%20Shot%202021-04-29%20at%208.43.38%20AM.png)
 
 ## CHALLENGES
 
