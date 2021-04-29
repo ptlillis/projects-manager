@@ -12,9 +12,9 @@ function Project({project, onDelete,onToggle}) {
         onDelete(project.id)}/>
         </h3>
            
-            <p>{project.developers[0].name}</p>
-            <p>{project.tech_stack[0].name}</p>
-            <p>{project.tech_stack[0].count}</p>
+            <p>Assigned Developers :  {project.developers[0].name}</p>
+            <p> Project Requirements : {project.tech_stack[0].name}</p>
+            <p> Number Of Developers : {project.tech_stack[0].count}</p>
 
              
            

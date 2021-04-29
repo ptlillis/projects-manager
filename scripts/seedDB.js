@@ -20,6 +20,42 @@ const developerSeed = [
     name: "Peter",
     role: "Front-end",
   },
+  {
+    name: "Yaze",
+    role: "Front-end",
+  },
+  {
+    name: "John",
+    role: "MongoDB",
+  },
+  {
+    name: "Zaid",
+    role: "full-stack",
+  },
+  {
+    name: "Kevin",
+    role: "j-query",
+  },
+  {
+    name: "Hanna",
+    role: "ajax",
+  },
+  {
+    name: "Sam",
+    role: "react",
+  },
+  {
+    name: "Lola",
+    role: "CSS",
+  },
+  {
+    name: "Jessica",
+    role: "Html",
+  },
+  {
+    name: "Noel",
+    role: "mySQL",
+  },
 ];
 
 db.Developer.remove({})
