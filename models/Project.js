@@ -8,29 +8,23 @@ const ProjectSchema = new Schema({
     },
     name: {
         type: String,
-        required: true
+        // required: true
     },
-    due_date: {
-        type: Date,
-        required: true
-    },
+  
     tech_stacks: [
         new Schema({
             name: {
                 type: String,
-                required: true
+                // required: false 
             },
-            count: {
-                type: Number,
-                required: true
-            }
+     
         })
     ],
     developers: [
         new Schema({
             name: {
                 type: String,
-                required: true
+                // required: false
             }
         })
     ]

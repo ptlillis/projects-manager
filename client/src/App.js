@@ -17,6 +17,7 @@ function App() {
   const [showAdd,setShowAdd] = useState (false)
   const [projects, setProjects] = useState([])
  
+  
   useEffect(() => {
   loadProjects()
   },[]);
@@ -36,15 +37,32 @@ API.getProjects()
 
 
 }
-// add project 
-  const Addproject = (project) =>{
+//
 
-  const newproject = {...project}
-  setProjects([...projects,newproject])
-}
+  const Addprojects = async (project) => {
+    const res = await fetch('http://localhost:3020/api/projects', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(project),
+    })
+
+    const data = await res.json()
+    setProjects([...projects,data])
+  }
+// // add project 
+// //   function Addprojects
+// const data = await res.json()
+// setProjects([...projects,data ])
+//   }
 //delete project 
-const deleteProject = (id) => {
-  console.log(id);
+const deleteProject = async(id)=> {
+  await fetch(
+    `http://localhost:3020/api/projects/${id}`, {
+      method: 'DELETE',
+    })
+  
   setProjects(projects.filter((project) => project.id !==id))
 
 }
@@ -56,9 +74,12 @@ const reminderchange = (id) => {
   return (
     <div className="container">
       <Wrapper>
+        {/* <Jumbotron>
+          <h1>Hello, world!</h1>
+        </Jumbotron> */}
      
       <Header title='Project Manager' onAdd={() => setShowAdd (!showAdd)} showAdd= {showAdd}/>
-        {showAdd && <AddProject onAdd={Addproject} />}
+        {showAdd && <AddProject onAdd={Addprojects} />}
       {projects.length > 0 ?<Projects projects={projects} onDelete={deleteProject} onToggle ={reminderchange}/> : "No Current Projects"}
       
    

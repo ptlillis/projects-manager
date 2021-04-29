@@ -67,7 +67,7 @@ const projectSeed = [
   },
   {
     name: "Project-2",
-    tech_stack: [{ name: "MongoDB", count: 4 }],
+    tech_stack: [{ name: "MongoDB",}],
     developers: [{ name: "Daniel" }],
   },
 ];

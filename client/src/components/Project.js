@@ -11,15 +11,12 @@ function Project({project, onDelete,onToggle}) {
         onClick={() =>
         onDelete(project.id)}/>
         </h3>
-            <p>{project.name}</p>
+           
             <p>{project.developers[0].name}</p>
-            
+            <p>{project.tech_stack[0].name}</p>
+            <p>{project.tech_stack[0].count}</p>
 
-
-            {<p>{project.tech_stacks[0].name}</p>}
-            {<p>{project.tech_stacks[0].cou}</p>}
-
-            
+             
            
             
         </div>

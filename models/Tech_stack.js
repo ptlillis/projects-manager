@@ -8,7 +8,7 @@ const Tech_stackSchema = new Schema({
   },
   name: {
       type: String,
-      required: true
+    //   required: true
   },
   Description: {
       type: String

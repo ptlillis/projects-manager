@@ -9,11 +9,11 @@ export default {
     //     return axios.get("/api/books/" + id);
     // },
     // // Deletes the book with the given id
-    // deleteBook: function (id) {
-    //     return axios.delete("/api/books/" + id);
-    // },
+    deleteproject: function (id) {
+        return axios.delete("http://localhost:3020/api/projects" + id);
+    },
     // Saves a book to the database
-    saveProject: function (projectData) {
-        return axios.post("http://localhost:3020/api/projects",projectData);
+    saveProject: function () {
+        return axios.post("http://localhost:3020/api/projects");
     }
 };
