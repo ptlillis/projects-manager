@@ -36,11 +36,10 @@ This application uses MERN framework, and is part of an ongoing build.
 
 ## Dataflow and Wireframes
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![UI wireframe #1](https://github.com/ptlillis/projects-manager/blob/main/assets/image%20(3).png)
+![UI wireframe #2](https://github.com/ptlillis/projects-manager/blob/main/assets/image%20(4).png)
+![System Diagram](https://github.com/ptlillis/projects-manager/blob/main/assets/sys-diagram.png)
+![Technology Map](https://github.com/ptlillis/projects-manager/blob/main/assets/system-2.png)
 
 ## CHALLENGES
 
